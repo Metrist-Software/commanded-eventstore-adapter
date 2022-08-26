@@ -39,7 +39,7 @@ defmodule Commanded.EventStore.Adapters.EventStore.Mixfile do
 
   defp deps do
     [
-      {:commanded, "~> 1.4.0-rc.0"},
+      {:commanded, git: "https://github.com/Metrist-Software/commanded", branch: "batching-support"},
       {:eventstore, "~> 1.3"},
 
       # Optional dependencies
