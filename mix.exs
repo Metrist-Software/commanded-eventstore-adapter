@@ -1,7 +1,7 @@
 defmodule Commanded.EventStore.Adapters.EventStore.Mixfile do
   use Mix.Project
 
-  @version "1.4.0-rc.0"
+  @version "1.4.0"
 
   def project do
     [
@@ -39,11 +39,11 @@ defmodule Commanded.EventStore.Adapters.EventStore.Mixfile do
 
   defp deps do
     [
-      {:commanded, git: "https://github.com/Metrist-Software/commanded", branch: "batching-support"},
+      {:commanded, "~> 1.4"},
       {:eventstore, "~> 1.3"},
 
       # Optional dependencies
-      {:jason, "~> 1.2", optional: true},
+      {:jason, "~> 1.3", optional: true},
 
       # Build & test tools
       {:ex_doc, ">= 0.0.0", only: :dev},
